@@ -1,13 +1,87 @@
 <html>
-  <head>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <h2>Take a look at these things...</h2>
-    <ul>
-      <li><a href="animated-check/example.html">Animated Checkpoints!</a><br />
-      Forked from <a href="https://github.com/donmccurdy/aframe-extras">A-Frame extras</a> by 
-        <a href="https://www.donmccurdy.com/">Don McCurdy</a></li>
-    </ul>
-  </body>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1">
+  <title>Examples • Checkpoints</title>
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <script src="../bundle.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <a-mixin id="checkpoint"></a-mixin>
+      <a-mixin id="checkpoint-hovered" color="#6CEEB5"></a-mixin>
+    </a-assets>
+
+    <!-- Player -->
+    <a-entity position="0 0 0" rotation="0 0 0">
+    <a-entity id="rig" movement-controls="controls: checkpoint" checkpoint-controls="mode: animate">
+      <a-entity camera position="0 1.6 0" look-controls="pointerLockEnabled: true">
+        <a-entity cursor position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;" material="color: #CCC; shader: flat;"></a-entity>
+      </a-entity>
+    </a-entity>
+  </a-entity>
+
+
+    <!-- Rotating checkpoint -->
+    <a-entity position="0 1 0" rotation="0 0 0">
+      <a-animation id="animation-1" attribute="rotation" to="0 360 0" dur="200000" easing="linear" repeat="indefinite"></a-animation>
+      <a-entity position="15 0 0">
+        <a-entity>
+          <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+          <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+          <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+          <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+        </a-entity>
+        <a-cylinder checkpoint="animationId: animation-1;" radius="1" height="0.1" position="-1 0 1" color="#39BB82"></a-cylinder>
+      </a-entity>
+    </a-entity>
+
+    <!-- Checkpoints -->
+    <a-entity position="1 0 1">
+      <a-cylinder checkpoint radius="1" height="0.1" position="0 0 -5.2" color="#39BB82"></a-cylinder>
+      <a-cylinder checkpoint radius="1" height="0.1" position="3 0 0" color="#39BB82"></a-cylinder>
+      <a-cylinder checkpoint radius="1" height="0.1" position="-3 0 0" color="#39BB82"></a-cylinder>
+    </a-entity>
+
+
+    <a-entity rotation="0 0 0">
+      <a-animation id="animation-2" attribute="rotation" to="0 0 360" dur="200000" easing="linear" repeat="indefinite"></a-animation>
+      <a-entity id="slide-8" position="22.5 0 0">
+              <a-entity>
+                      <a-sphere position="0 1.25 -5" radius="5" color="#EF2D5E"></a-sphere>
+              </a-entity>
+
+              <a-cylinder checkpoint="animationId: animation-2" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder>
+
+              <a-entity id="slide-9" position="0 -5 -5">
+
+                      <a-cylinder checkpoint="animationId: animation-2" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder>
+              </a-entity>
+
+              <a-entity id="slide-10" position="0 -10 -10">
+
+                      <a-cylinder checkpoint="animationId: animation-2" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder>
+              </a-entity>
+
+              <a-entity id="slide-11" position="0 -15 -15">
+                      <a-entity>
+                              <a-sphere position="0 1.25 -5" radius="2" color="cyan"></a-sphere>
+                      </a-entity>
+
+                      <a-cylinder checkpoint="animationId: animation-2" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder>
+              </a-entity>
+      </a-entity>
+</a-entity>
+
+
+
+    <!-- Lighting -->
+    <a-light type="ambient" color="#fff"></a-light>
+  </a-scene>
+</body>
+
 </html>
