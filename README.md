@@ -4,7 +4,7 @@
 * [Animated Checkpoints!](animated-check/example.html)  
   Forked from [A-Frame extras](https://github.com/donmccurdy/aframe-extras).
 
-* [A-Frame link]
+* [A-Frame link](link/example.html)
   
   **Note:** The **a-link** primative does not provide mappings for all the properties - Is this also the case for other primatives?  
 ``` JavaScript
