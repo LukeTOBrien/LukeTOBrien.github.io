@@ -1,0 +1,289 @@
+<html>
+
+<head>
+
+
+    <script src="aframe.min.js"></script>
+    <script src="aframe-extras.min.js"></script>
+    <script src="aframe-physics-system.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+
+        <a-sky color="#6EBAA7"></a-sky>
+
+        <a-grid position="150 0.1 200" static-body></a-grid>
+
+
+        <!-- Camera 
+      <a-entity id="rig" movement-controls="controls: checkpoint" checkpoint-controls="mode: animate">
+        <a-entity camera
+                  position="0 1.5 0"
+                  look-controls="pointerLockEnabled: true">
+          <a-entity cursor
+                    position="0 0 -1"
+                    geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;"
+                    material="color: #CCC; shader: flat;"></a-entity>
+        </a-entity>
+      </a-entity>
+-->
+
+        <a-entity class="wall">
+            <a-box position="117.739583 -5 192.80205665" width="13.229166" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="125.67707665 -5 157.0833205" width="2.6458333" depth="74.083321" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="109.80207665 -5 157.083328" width="2.6458333" depth="74.083336" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="104.51041 -5 121.36457665" width="7.9375" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="149.489584 -5 121.36457665" width="44.979168" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="166.6874965 -5 124.01040665" width="10.583333" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="160.07291665 -5 143.854156" width="2.6458333" depth="42.333332" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="181.239584 -5 166.34374665" width="44.979168" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="205.05207665 -5 157.083313" width="2.6458333" depth="21.166666" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="194.468753 -5 121.36457665" width="13.229166" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="72.76041665 -5 110.781254" width="2.6458333" depth="18.520828" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="197.114587 -5 124.01040665" width="18.520834" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="205.05207665 -5 129.30209" width="2.6458333" depth="7.9375" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="246.06249325 -5 126.65624" width="5.2916665" depth="7.9375" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="88.635419 -5 118.71875665" width="29.104166" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="246.06249325 -5 146.49999325" width="5.2916665" depth="5.2916665" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="246.0625 -5 150.46874665" width="79.375" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="165.36458665 -5 69.770821" width="2.6458333" depth="52.916664" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="141.552084 -5 44.63540565" width="44.979168" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="120.38541665 -5 35.374998" width="2.6458333" depth="15.875" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="112.447913 -5 28.76041465" width="13.229166" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="104.51041665 -5 16.8541634" width="2.6458333" depth="26.458332" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="242.09374665 -5 65.802073" width="2.6458333" depth="44.979168" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="219.60417 -5 89.61458065" width="47.625" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="201.0833365 -5 94.90625265" width="10.583333" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="205.05207665 -5 108.135419" width="2.6458333" depth="29.104166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="186.53124665 -5 92.260414" width="2.6458333" depth="7.9375" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="181.23958 -5 94.90625265" width="7.9375" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="119.0625 -5 2.30207821" width="31.75" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="133.61458665 -5 16.8541634" width="2.6458333" depth="26.458332" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="141.552083 -5 28.76041465" width="13.229166" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="144.19792 -5 26.11457865" width="7.9375" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="141.55208665 -5 12.88541156" width="2.6458333" depth="23.8125" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="153.458333 -5 2.30207821" width="21.166666" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="162.71874665 -5 14.2083304" width="2.6458333" depth="21.166666" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="158.7499965 -5 26.11457865" width="10.583333" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="161.39583 -5 28.76041465" width="15.875" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="165.36458665 -5 14.20832756" width="2.6458333" depth="26.458332" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="168.01041665 -5 26.11457865" width="2.6458333" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="179.916666 -5 2.30207821" width="26.458332" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="191.82291665 -5 15.5312474" width="2.6458333" depth="23.8125" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="183.885413 -5 26.11457865" width="13.229166" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="178.59374665 -5 43.312498" width="2.6458333" depth="31.75" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="211.66667 -5 41.98957665" width="63.5" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="178.59374665 -5 82.999997" width="2.6458333" depth="21.166666" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="182.56250325 -5 89.61458065" width="5.2916665" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="137.583328 -5 94.90625265" width="52.916656" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="101.86457665 -5 98.2135403" width="2.6458333" depth="6.6145806" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="92.604164 -5 100.19790865" width="15.875" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="74.08333325 -5 100.19790865" width="5.2916665" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="75.40625265 -5 93.5833305" width="2.6458333" depth="10.583333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="66.145832 -5 89.61458065" width="15.875" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="104.51041665 -5 60.510416" width="2.6458333" depth="60.854164" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="67.468749 -5 28.76041465" width="18.520834" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="92.604169 -5 28.76041465" width="21.166666" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="96.57291665 -5 14.20832756" width="2.6458333" depth="26.458332" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="88.635419 -5 26.11457865" width="13.229166" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="70.114583 -5 26.11457865" width="13.229166" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="79.375 -5 2.30207821" width="31.75" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="64.82291665 -5 14.2083304" width="2.6458333" depth="21.166666" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="59.53124865 -5 59.1875" width="2.6458333" depth="58.208332" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="246.062496 -5 122.68750665" width="79.374992" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="93.927081 -5 89.61458065" width="18.520834" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="85.98958065 -5 94.906242" width="2.6458333" depth="7.9375" color="#0000ff" height="10" static-body=""></a-box>
+        </a-entity>
+        <a-entity class="floor">
+            <a-box id="rect18" position="287.73437995 -9.9 136.504252" width="9.2604399" color="#ff6600" depth="14.699824" static-body=""></a-box>
+            <a-box id="rect3727" position="265.0178075 -9.9 136.697004" width="36.172695" color="#ff6600" depth="26.458328" static-body=""></a-box>
+            <a-box id="rect3729" position="245.60852665 -9.9 138.019933" width="2.6458333" color="#ff6600" depth="13.229166" static-body=""></a-box>
+            <a-box id="rect3731" position="225.764794 -9.9 136.697004" width="37.041668" color="#ff6600" depth="26.458328" static-body=""></a-box>
+            <a-box id="rect3733" position="182.562506 -9.9 145.17709" width="42.333332" color="#ff6600" depth="39.6875" static-body=""></a-box>
+            <a-box id="rect3735" position="152.135428 -9.9 108.135414" width="97.895836" color="#ff6600" depth="23.8125" static-body=""></a-box>
+            <a-box id="rect3737" position="82.020842 -9.9 59.187504" width="42.333332" color="#ff6600" depth="58.208332" static-body=""></a-box>
+            <a-box id="rect3739" position="80.697927 -9.9 14.2083356" width="29.104166" color="#ff6600" depth="21.166666" static-body=""></a-box>
+            <a-box id="rect3741" position="119.062506 -9.9 15.5312526" width="26.458332" color="#ff6600" depth="23.8125" static-body=""></a-box>
+            <a-box id="rect3743" position="152.135437 -9.9 14.2083356" width="18.520834" color="#ff6600" depth="21.166666" static-body=""></a-box>
+            <a-box id="rect3745" position="178.59377 -9.9 14.2083356" width="23.8125" color="#ff6600" depth="21.166666" static-body=""></a-box>
+            <a-box id="rect3747" position="210.343772 -9.9 65.80208" width="60.854164" color="#ff6600" depth="44.979168" static-body=""></a-box>
+            <a-box id="rect3749" position="127.0000065 -9.9 28.76041865" width="10.583333" color="#ff6600" depth="2.6458333" static-body=""></a-box>
+            <a-box id="rect3751" position="149.48959 -9.9 36.697921" width="55.5625" color="#ff6600" depth="13.229166" static-body=""></a-box>
+            <a-box id="rect3753" position="171.9791865 -9.9 69.770828" width="10.583333" color="#ff6600" depth="52.916664" static-body=""></a-box>
+            <a-box id="rect3755" position="173.30209 -9.9 27.43749925" width="7.9375" color="#ff6600" depth="5.2916665" static-body=""></a-box>
+            <a-box id="rect3757" position="150.81252325 -9.9 27.43749925" width="5.2916665" color="#ff6600" depth="5.2916665" static-body=""></a-box>
+            <a-box id="rect3759" position="79.37500525 -9.9 27.43749925" width="5.2916665" color="#ff6600" depth="5.2916665" static-body=""></a-box>
+            <a-box id="rect3761" position="88.635427 -9.9 109.45834" width="29.104166" color="#ff6600" depth="15.875" static-body=""></a-box>
+            <a-box id="rect3763" position="80.697922 -9.9 94.906247" width="7.9375" color="#ff6600" depth="13.229166" static-body=""></a-box>
+            <a-box id="rect3765" position="117.739593 -9.9 155.76041" width="13.229166" color="#ff6600" depth="71.4375" static-body=""></a-box>
+            <a-box id="rect3767" position="206.37500325 -9.9 139.885423" width="5.2916665" color="#ff6600" depth="13.229166" static-body=""></a-box>
+            <a-box id="rect3769" position="179.91669 -9.9 122.68749325" width="15.875" color="#ff6600" depth="5.2916665" static-body=""></a-box>
+            <a-box id="servant-first" position="120.1208351 -9.4 101.5208305" width="1.0583302" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="platform" position="107.15626 -4.9 101.5208305" width="7.9375" color="#ff0000" depth="10.583333" static-body=""></a-box>
+            <a-box id="servant-stair" position="293.68747665 -9.4 131.28645285" width="2.6458333" color="#ff0000" depth="3.9687457" static-body=""></a-box>
+            <a-box id="rect3815" position="191.82294 -9.9 92.260414" width="7.9375" color="#ff6600" depth="7.9375" static-body=""></a-box>
+            <a-box id="rect3817" position="178.59375665 -9.9 65.802079" width="2.6458333" color="#ff6600" depth="13.229166" static-body=""></a-box>
+            <a-box id="rect3813" position="202.40625665 -9.9 109.45833" width="2.6458333" color="#ff6600" depth="26.458332" static-body=""></a-box>
+            <a-box id="rect4687" position="294.348965 -9.9 138.5624965" width="3.96875" color="#ff6600" depth="10.583333" static-body=""></a-box>
+            <a-box id="rect4689" position="295.6718683 -9.9 131.286455" width="1.3229166" color="#ff6600" depth="3.96875" static-body=""></a-box>
+            <a-box id="rect4691" position="291.96771617 -8.9 131.286455" width="0.79377234" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect4693" position="291.173948035 -8.4 131.286455" width="0.79375607" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect4695" position="290.38021294 -7.9 131.286455" width="0.79374588" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect4697" position="289.5864799 -7.4 131.286455" width="0.7937398" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect4699" position="288.792714995 -6.9 131.286455" width="0.79374999" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect4701" position="287.99896006 -6.4 131.286455" width="0.79376012" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect996" position="287.2052199 -5.9 131.286455" width="0.7937398" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect998" position="286.411434995 -5.4 131.286455" width="0.79374999" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1000" position="285.61771006 -4.9 131.286455" width="0.79376012" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1002" position="280.0614499 -1.4 131.286455" width="0.7937398" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect999" position="284.823964995 -4.4 131.286455" width="0.79374999" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1001" position="284.030204995 -3.9 131.286455" width="0.79374999" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1003" position="283.236444995 -3.4 131.286455" width="0.79374999" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1005" position="282.442714995 -2.9 131.286455" width="0.79374999" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1007" position="281.648954995 -2.4 131.286455" width="0.79374999" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1009" position="280.855214995 -1.9 131.286455" width="0.79374999" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1006" position="119.06249485 -8.9 101.5208305" width="1.0583297" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1008" position="118.0041708 -8.4 101.5208305" width="1.0583216" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1010" position="116.94582815 -7.9 101.5208305" width="1.0583363" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1014" position="115.88749665 -7.4 101.5208305" width="1.0583333" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1016" position="114.82916665 -6.9 101.5208305" width="1.0583333" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1018" position="113.77083665 -6.4 101.5208305" width="1.0583333" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1020" position="112.71249665 -5.9 101.5208305" width="1.0583333" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1022" position="111.65416665 -5.4 101.5208305" width="1.0583333" color="#ff0000" depth="10.583333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1024" position="107.15625 -0.9 88.82083295" width="7.9375" color="#ff0000" depth="1.0583379" static-body="" height="0.5"></a-box>
+            <a-box id="rect1026" position="107.15625 -2.4 91.4666641" width="7.9375" color="#ff0000" depth="1.0583282" static-body="" height="0.5"></a-box>
+            <a-box id="rect1028" position="107.15625 -2.9 92.5249968" width="7.9375" color="#ff0000" depth="1.0583256" static-body="" height="0.5"></a-box>
+            <a-box id="rect1030" position="107.15625 -3.4 93.5833344" width="7.9375" color="#ff0000" depth="1.0583308" static-body="" height="0.5"></a-box>
+            <a-box id="rect1032" position="107.15625 -3.9 94.6416671" width="7.9375" color="#ff0000" depth="1.0583282" static-body="" height="0.5"></a-box>
+            <a-box id="rect1034" position="107.15625 -4.4 95.6999928" width="7.9375" color="#ff0000" depth="1.0583256" static-body="" height="0.5"></a-box>
+            <a-box id="rect1036" position="107.15625 -1.9 90.540619995" width="7.9375" color="#ff0000" depth="0.79374999" static-body="" height="0.5"></a-box>
+            <a-box id="rect1038" position="107.15625 -1.4 89.746872995" width="7.9375" color="#ff0000" depth="0.79374999" static-body="" height="0.5"></a-box>
+        </a-entity>
+        <a-entity class="wall">
+            <a-box position="226.21875 5 59.8489583" width="31.75" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="241.4322883 5 82.338543" width="1.3229166" depth="43.65625" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="225.557291 5 103.5051983" width="30.427082" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="211.0052083 5 98.2135365" width="1.3229166" depth="9.260417" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="207.0364515 5 94.2447863" width="6.614583" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="204.3906183 5 114.749994" width="1.3229166" depth="39.687504" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="206.37499665 5 133.9322883" width="2.6458333" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="207.0364583 5 126.656243" width="1.3229166" depth="13.229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="222.249993 5 120.7031183" width="29.104166" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="236.1406183 5 127.317705" width="1.3229166" depth="11.90625" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="238.786455 5 132.6093683" width="3.96875" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="240.1093683 5 127.3176985" width="1.3229166" depth="9.260417" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="289.718743 5 128.6406183" width="13.229166" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="283.7656183 5 125.33332325" width="1.3229166" depth="5.2916665" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="261.937496 5 123.3489483" width="42.333332" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="236.1406183 5 151.1302115" width="1.3229166" depth="14.552083" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="238.7864613 5 144.5156283" width="3.9687626" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="221.588535 5 157.7447983" width="27.78125" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="207.0364583 5 155.76042325" width="1.3229166" depth="5.2916665" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="205.05207665 5 153.7760483" width="2.6458333" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="204.3906183 5 160.390625" width="1.3229166" depth="11.90625" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="183.223961 5 165.6822983" width="41.010422" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="119.723959 5 165.6822983" width="41.010418" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="99.9829642 5 112.104165" width="1.1174024" depth="105.83333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="109.140625 5 57.92468375" width="19.84375" depth="2.5256295" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="172.640621 5 57.86458465" width="62.177082" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="204.3906183 5 65.802085" width="1.3229166" depth="18.520834" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="220.92708 5 57.2031263" width="31.75" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="236.1406183 5 36.697916" width="1.3229166" depth="39.6875" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="167.34896 5 17.5156243" width="136.26042" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="99.8802083 5 37.359375" width="1.3229166" depth="38.364582" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="208.3593715 5 74.4010363" width="6.614583" depth="1.3229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="211.0052083 5 67.125001" width="1.3229166" depth="13.229166" color="#0000ff" height="10" static-body=""></a-box>
+            <a-cylinder position="137.18915 5 171.88927" radius="2" color="#ff9b00" height="10" static-body=""></a-cylinder>
+            <a-cylinder position="137.10855 5 178.42326" radius="2" color="#ff9b00" height="10" static-body=""></a-cylinder>
+            <a-cylinder position="137.13542 5 185.05127" radius="2" color="#ff9b00" height="10" static-body=""></a-cylinder>
+            <a-cylinder position="164.75754 5 171.64818" radius="2" color="#ff9b00" height="10" static-body=""></a-cylinder>
+            <a-cylinder position="164.67694 5 178.18217" radius="2" color="#ff9b00" height="10" static-body=""></a-cylinder>
+            <a-cylinder position="164.70381 5 184.81018" radius="2" color="#ff9b00" height="10" static-body=""></a-cylinder>
+        </a-entity>
+        <a-entity class="floor">
+            <a-box id="rect111" position="278.34166665 -0.4 131.286455" width="1.0583333" color="#ff0000" depth="3.96875" static-body=""></a-box>
+            <a-box id="rect113" position="293.026035 0.1 136.5781215" width="3.96875" color="#ff6600" depth="14.552083" static-body=""></a-box>
+            <a-box id="rect115" position="284.427078 0.1 138.5624965" width="13.229156" color="#ff6600" depth="10.583333" static-body=""></a-box>
+            <a-box id="rect117" position="259.2916695 0.1 136.578118" width="37.041679" color="#ff6600" depth="25.135416" static-body=""></a-box>
+            <a-box id="rect119" position="152.13541 0.1 131.947914" width="103.1875" color="#ff6600" depth="66.145828" static-body=""></a-box>
+            <a-box id="ground-servant" position="107.15625 -0.4 86.96874465" width="7.9375" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect121" position="226.218743 0.1 81.677084" width="29.104166" color="#ff6600" depth="42.333332" static-body=""></a-box>
+            <a-box id="rect123" position="168.0104 0.1 37.359377" width="134.93748" color="#ff6600" depth="38.364586" static-body=""></a-box>
+            <a-box id="rect125" position="130.307292 0.1 57.86458465" width="22.489584" color="#ff6600" depth="2.6458333" static-body=""></a-box>
+            <a-box id="rect127" position="207.69791 0.1 84.322909" width="7.9375" color="#ff6600" depth="18.520834" static-body=""></a-box>
+            <a-box id="rect141" position="238.12500085 0.1 138.5624965" width="5.2916617" color="#ff6600" depth="10.583333" static-body=""></a-box>
+            <a-box id="rect143" position="221.588535 0.1 139.223955" width="27.78125" color="#ff6600" depth="35.71875" static-body=""></a-box>
+            <a-box id="rect145" position="205.713535 0.1 143.854167" width="3.96875" color="#ff6600" depth="18.520834" static-body=""></a-box>
+            <a-box id="rect162" position="105.8333265 0.1 72.416665" width="10.583333" color="#ff6600" depth="26.45833" static-body=""></a-box>
+            <a-box id="rect164" position="161.395832 0.1 77.708334" width="84.666664" color="#ff6600" depth="37.041668" static-body=""></a-box>
+            <a-box id="rect166" position="115.09375 0.1 79.031254" width="7.9375" color="#ff6600" depth="39.687508" static-body=""></a-box>
+            <a-box id="ground-first" position="153.458336 0.6 98.213543" width="42.333332" color="#ff0000" depth="1.322914" static-body="" height="0.5"></a-box>
+            <a-box id="rect170" position="101.86457925 0.1 92.260418" width="2.6458385" color="#ff6600" depth="13.229164" static-body=""></a-box>
+            <a-box id="rect172" position="189.177083 0.1 97.55208065" width="29.104166" color="#ff6600" depth="2.6458333" static-body=""></a-box>
+            <a-box id="rect983" position="125.677083 0.1 97.55208065" width="13.229166" color="#ff6600" depth="2.6458333" static-body=""></a-box>
+            <a-box id="rect992" position="280.45833325 0.1 126.65624325" width="5.2916665" color="#ff6600" depth="5.2916665" static-body=""></a-box>
+            <a-box id="rect994" position="280.45833325 0.1 146.50000325" width="5.2916665" color="#ff6600" depth="5.2916665" static-body=""></a-box>
+            <a-box id="rect1004" position="279.2676899 -0.9 131.286455" width="0.7937398" color="#ff0000" depth="3.96875" static-body="" height="0.5"></a-box>
+            <a-box id="rect1040" position="153.458336 1.1 96.89061975" width="42.333332" color="#ff0000" depth="1.3229115" static-body="" height="0.5"></a-box>
+            <a-box id="rect1042" position="153.458336 1.6 95.5677054" width="42.333332" color="#ff0000" depth="1.3229108" static-body="" height="0.5"></a-box>
+            <a-box id="rect1044" position="153.458336 2.1 94.244793" width="42.333332" color="#ff0000" depth="1.322914" static-body="" height="0.5"></a-box>
+            <a-box id="rect1046" position="153.458336 2.6 92.92187775" width="42.333332" color="#ff0000" depth="1.3229115" static-body="" height="0.5"></a-box>
+            <a-box id="rect1048" position="153.458336 3.1 90.93749465" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1050" position="153.458336 3.6 88.29166665" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1052" position="153.458336 4.1 85.64583065" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1054" position="153.458336 4.6 82.99999465" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1056" position="153.458336 5.1 80.35416665" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1058" position="153.458336 5.6 77.70833065" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1060" position="153.458336 6.1 75.06249465" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1062" position="153.458336 6.6 72.41666665" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect1064" position="153.458336 7.1 70.4322863" width="42.333332" color="#ff0000" depth="1.3229166" static-body="" height="0.5"></a-box>
+            <a-box id="rect1066" position="153.458336 7.6 69.1093723" width="42.333332" color="#ff0000" depth="1.3229166" static-body="" height="0.5"></a-box>
+            <a-box id="rect1068" position="153.458336 8.1 67.7864583" width="42.333332" color="#ff0000" depth="1.3229166" static-body="" height="0.5"></a-box>
+        </a-entity>
+        <a-entity class="wall">
+            <a-box position="162.71875 15 158.40625665" width="134.9375" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="228.86457665 15 133.270822" width="2.6458333" depth="52.916664" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="215.63541 15 108.13540665" width="23.8125" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="205.05207665 15 64.479166" width="2.6458333" depth="84.666664" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="149.48958 15 23.46875065" width="108.47916" depth="2.6458333" color="#0000ff" height="10" static-body=""></a-box>
+            <a-box position="96.57291665 15 90.937503" width="2.6458333" depth="132.29167" color="#0000ff" height="10" static-body=""></a-box>
+        </a-entity>
+        <a-entity class="floor">
+            <a-box id="first-floor" position="153.458336 9.6 63.15624865" width="42.333332" color="#ff0000" depth="2.6458333" static-body="" height="0.5"></a-box>
+            <a-box id="rect176" position="189.177083 10.1 67.125" width="29.104166" color="#ff6600" depth="84.666664" static-body=""></a-box>
+            <a-box id="rect178" position="162.718751 10.1 133.270836" width="129.64583" color="#ff6600" depth="47.624992" static-body=""></a-box>
+            <a-box id="rect180" position="115.093752 10.1 67.125" width="34.395832" color="#ff6600" depth="84.666664" static-body=""></a-box>
+            <a-box id="rect182" position="153.458336 10.1 43.312502" width="42.333332" color="#ff6600" depth="37.041668" static-body=""></a-box>
+            <a-box id="rect1070" position="153.458336 8.6 66.4635443" width="42.333332" color="#ff0000" depth="1.3229166" static-body="" height="0.5"></a-box>
+            <a-box id="rect1072" position="153.458336 9.1 65.1406223" width="42.333332" color="#ff0000" depth="1.3229166" static-body="" height="0.5"></a-box>
+        </a-entity>
+
+        <!-- Player -->
+        <a-entity id="rig" movement-controls position="150 0.1 200" jump-ability="maxJumps: 3;
+                              distance: 10;">
+            <a-entity id="camera" camera position="0 2 0" look-controls="pointerLockEnabled: true">
+                <a-cursor></a-cursor>
+            </a-entity>
+        </a-entity>
+
+
+    </a-scene>
+
+
+
+
+    <script>
+        var grid = document.querySelector('a-grid');
+        grid.addEventListener('body-loaded', function(e) {
+            setTimeout(() => {
+                var playerEl = document.querySelector('#rig');
+
+                playerEl.setAttribute("kinematic-body", "enableJumps: true;");
+            }, 3000);
+        });
+    </script>
+</body>
+
+</html>
