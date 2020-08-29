@@ -5,3 +5,6 @@
   
 * [VR presentation](hosted/vrpresentation.html)
   * Click on the platform to move to that slide
+
+* [Ickworh House VR]
+* [British Museum entrance]()
