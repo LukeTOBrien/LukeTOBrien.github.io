@@ -1,0 +1,250 @@
+<html>
+  <head>
+  
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="cpc.js"></script>
+ 
+    <script src="aframe.min.js"></script>
+    <script src="bundle.js"></script>
+    <script src="aframe-html-shader.min.js"></script>
+<style>
+body {
+font-size: 42px;
+}
+h1, h2, h3, h4 {
+font-size: 82px;
+}
+</style>
+  </head>
+  <body>
+    <a-scene>
+    
+      <a-sky id="sky" color="#ECECEC"></a-sky>
+
+      <a-assets>
+        <a-mixin id="checkpoint"></a-mixin>
+        <a-mixin id="checkpoint-hovered" color="#6CEEB5"></a-mixin>
+
+        <img id="jupiter" src="jupiter.jpg"></img>
+        <img id="titan" src="titan.jpg"></img>
+		    <img id="galaxy" src="ihttps://s3-us-west-2.amazonaws.com/s.cdpn.io/780593/galaxy.jpg">
+    <img id="moon" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/moon_1024.jpg">
+      <img id="clouds" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_clouds_2048.png">
+      <img id="venus" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/780593/5710820393_a36f3c730b_m.jpg">
+      </a-assets>
+
+      <!-- Camera -->
+	  <a-entity>
+      <a-entity id="rig" movement-controls="controls: checkpoint" checkpoint-controls="mode: animate">
+        <a-entity camera
+                  position="0 1.5 0"
+                  look-controls="pointerLockEnabled: true">
+          <a-entity cursor
+                    position="0 0 -1"
+                    geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;"
+                    material="color: #CCC; shader: flat;"></a-entity>
+        </a-entity>
+      </a-entity>
+	  </a-entity>
+
+        <a-entity id="slide-1" position="0 0 0"><a-entity id="slide-1" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-1 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder></a-entity>
+        <a-entity id="slide-2" position="5 0 0"><a-entity>
+  <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+  <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+  <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+  <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+</a-entity><a-entity id="slide-2" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-2 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder><a-entity id="slide-3" position="0 -5 -5"><a-entity id="slide-3" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-3 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder></a-entity><a-entity id="slide-4" position="0 -10 -10"><a-entity id="slide-4" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-4 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder><a-entity id="slide-5" position="0 0 -5"><a-entity id="slide-5" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-5 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder></a-entity>
+<a-entity id="slide-6" position="0 0 -10">
+
+<a-entity layout="type: circle; margin: 20" position="0 2 -5" radius=40>
+         <a-animation        attribute="rotation"
+       dur="5000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  <a-sphere  src="" position="0 0 0" radius="1" color="#9C2A3C" material="src: #clouds">
+         <a-animation        attribute="rotation"
+       dur="10000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+  <a-sphere src="" position="3 2 1" radius=".5" color="#5EFDE1"  material="src: #moon">
+         <a-animation        attribute="rotation"
+       dur="7000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+  <a-sphere color="#F8D05B" material="src: #moon" position="2 -2 0" radius=".5">
+    <a-animation        attribute="rotation"
+       dur="2000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+  <a-sphere src="" position="-7 0 -4" radius="1.25" color="#1C7891"  material="src: #moon">
+     <a-animation        attribute="rotation"
+       dur="5000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+     <a-sphere position="-2 0 -1" radius=".2" color="#5C7294"  material="src: #moon">
+     <a-animation        attribute="rotation"
+       dur="4000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+    <a-sphere src="" position="-4 3 1" radius=".1" color="#A599B5"  material="src: #moon">
+         <a-animation        attribute="rotation"
+       dur="1000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+        <a-sphere src="" position="-2 1 -5" radius=".1" color="#E5446D"  material="src:#clouds">
+         <a-animation        attribute="rotation"
+       dur="1000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+            <a-sphere src="" position="-2 -5 5" radius=".1" color="#E5446D"  material="src:#clouds">
+         <a-animation        attribute="rotation"
+       dur="1000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+ </a-entity>
+ 
+	<a-entity id="slide-6" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-6 ; transparent: true; side: double" scale="1 1 0"></a-entity>
+		<a-cylinder checkpoint="" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder>
+	</a-entity>
+</a-entity></a-entity>
+        <a-entity id="slide-7" position="10 0 0"><a-entity id="slide-7" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-7 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder></a-entity>
+        <a-entity rotation="0 0 0">
+                    <a-animation id="orbit" attribute="rotation" to="0 360 0 " dur="200000" easing="linear" repeat="indefinite"></a-animation>
+        <a-entity id="slide-8" position="22.5 0 0"><a-entity>
+  <a-sphere position="0 1.25 -8" radius="5" material="src: #jupiter"></a-sphere>
+</a-entity><a-entity id="slide-8" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-8 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="animationId: orbit" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder><a-entity id="slide-9" position="0 -5 -5"><a-entity id="slide-9" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-9 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="animationId: orbit" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder></a-entity><a-entity id="slide-10" position="0 -10 -10"><a-entity id="slide-10" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-10 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="animationId: orbit" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder></a-entity><a-entity id="slide-11" position="0 -15 -15"><a-entity>
+  <a-sphere position="0 1.25 -5" radius="2" material="src: #titan"></a-sphere>
+</a-entity><a-entity id="slide-11" position="0 1.5 0" geometry="primitive: plane" material="shader: html; target: #html-content-slide-11 ; transparent: true; side: double" scale="1 1 0"></a-entity><a-cylinder checkpoint="animationId: orbit" radius="1" height="0.1" position="0 0 1" color="#39BB82"></a-cylinder></a-entity></a-entity>
+        </a-entity>
+
+      <!-- Checkpoints -->
+      <a-entity position="1 0 1">
+      </a-entity>
+
+    </a-scene>
+
+      <div id="html-content">
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-1" style="width: 800px; height: 800px;">
+<h1>Virtual Reality</h1>
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-2" style="width: 800px; height: 800px;">
+<h1>Basic scene</h1>
+<ul>
+<li>This is a basic scene</li>
+<li>We can also have text here.
+<ul>
+<li><strong style="color:red;font-size:40px">Style with CSS</strong></li>
+</ul>
+</li>
+</ul>
+
+
+
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-3" style="width: 800px; height: 800px;">
+<h2>Go down</h2>
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-4" style="width: 800px; height: 800px;">
+<h2>And down..</h2>
+
+
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-5" style="width: 800px; height: 800px;">
+<h3>More forwards</h3>
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-6" style="width: 800px; height: 800px;">		
+<h3>Library of Scenes</h3>
+
+Teacher can add animations and models loaded from our library!
+<br />
+Tap into a huge collection of endless creations!
+
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-7" style="width: 800px; height: 800px;">
+<h1>Lorem ipsum</h1>
+<ul>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Sonsectetur adipiscing elit.
+<ul>
+<li>Sed do eiusmod tempor incididunt.</li>
+</ul>
+</li>
+</ul>
+<p>Read more about <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Lorem ipsum</a> on Wikipedia.</p>
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-8" style="width: 800px; height: 800px;">
+<h1 data-multiplier="2.5">Jupiter</h1>
+<div class="orbit">
+<ul>
+<li>Jupiter is the biggest planet in the Solar System.</li>
+</ul>
+<a-entity>
+  <a-sphere position="0 1.25 -8" radius="5" color="#EF2D5E" material="src: #jupiter"></a-sphere>
+</a-entity>
+</div>
+
+
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-9" style="width: 800px; height: 800px;">
+<h2></h2>
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-10" style="width: 800px; height: 800px;">
+<h2></h2>
+</div>
+</div>      
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+        <div id="html-content-slide-11" style="width: 800px; height: 800px;">
+<h2>Titan</h2>
+<ul>
+<li>Another of Jupiter's moons</li>
+</ul>
+</div>
+</div>      
+</div>
+  </body>
+</html>
