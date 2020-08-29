@@ -6,5 +6,6 @@
 * [VR presentation](hosted/vrpresentation.html)
   * Click on the platform to move to that slide
 
-* [Ickworh House VR]
-* [British Museum entrance]()
+* [Ickworh House VR](hosted/ickworth.html)
+* [British Museum entrance](hosted/BM-enterence-vlayout.html)
+  * WASD/ Arrow keys to move, mouse look, space to jumpp
